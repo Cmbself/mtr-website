@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Minecraft Transit Railway - Home</title>
+<link rel="icon" href="res/img/favicon.ico">
+<meta property="og:site_name" content="Minecraft Transit Railway - Home">
+<meta property="og:title" content="Minecraft Transit Railway">
+<meta property="og:url" content="http://mtr.r4.ink">
+<meta property="og:image" content="http://mtr.r4.ink/res/img/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:description" content="Build your own transport network with automated trains, boats, cable cars, and planes! ">
+<link href="res/css/main.css" type="text/css" rel="stylesheet">
+<link href="res/css/index.css" type="text/css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/337defcfa1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+<a class="main-nav" href="/">
+<img src="res/img/logo.jpg" alt="" width="60" height="32">
+Minecraf Transit Railway
+</a>
+<i class="fa-solid fa-download"></i><a href="https://modrinth.com/mod/minecraft-transit-railway">Downloads</a>
+<i class="fa-solid fa-book"></i><a href="https://github.com/jonafanho/Minecraft-Transit-Railway/wiki">Wiki</a>
+<i class="fa-solid fa-code"></i><a href="https://github.com/jonafanho/Minecraft-Transit-Railway/">Source</a>
+<i class="fa-brands fa-discord"></i><a href="https://discord.gg/PVZ2nfUaTW">Discord</a>
+<i class="fa-solid fa-comments"></i><a href="https://www.mtrbbs.com.cn">Community</a>
+</nav>
+<div class="page-content">
+<h1>Build your own transport network with MTR </h1>
+<p>A <a href="https://minecraft.gamepedia.com/Mods">Minecraft Mod</a> based on Hong Kong's MTR, the London Underground, and the New York Subway. It adds trains into the game along with other miscellaneous blocks and items. </p>
+<p>We currently support versions: 1.16.5 - 1.19.3</p>
+<div style="height: 90px;"></div>
+<h3>Showcase:</h3>
+<div class="gallery">
+<img id="gallery-image" src="" alt="Image Failed To Load">
+<p class="gallery-text" id="gallery-subtitle">[subtitle]</p>
+<p class="gallery-text" id="gallery-count" style="font-size: 12px; bottom: -10px;">[count]</p>
+<p class="gallery-prev" onclick="if (!window.__cfRLUnblockHandlers) return false; prevImage();" data-cf-modified-2df7a7221f5a5c27cdfdee76-="">&#10094;</p>
+<p class="gallery-next" onclick="if (!window.__cfRLUnblockHandlers) return false; nextImage();" data-cf-modified-2df7a7221f5a5c27cdfdee76-="">&#10095;</p>
+</div>
+</div>
+<script type="2df7a7221f5a5c27cdfdee76-text/javascript">
+        let imageIndex = 0;
+        const images = [
+            "res/img/showcase/mgyy.png", "res/img/showcase/gkzx.png"];
+
+        const subtitles = [ "美观易用", "高拓展性"];
+
+        setImage();
+
+        function setImage() {
+            document.getElementById('gallery-image').src = images[imageIndex];
+            document.getElementById('gallery-subtitle').innerHTML = subtitles[imageIndex];
+            document.getElementById('gallery-count').innerHTML = imageIndex + 1 + " / " + images.length;
+        }
+
+        function nextImage() {
+            imageIndex = (imageIndex + 1) % images.length;
+            setImage();
+        }
+
+        function prevImage() {
+            // Bruh because javascript remainder is wack
+            imageIndex = imageIndex === 0 ? images.length - 1 : imageIndex - 1;
+            setImage();
+        }
+    </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2df7a7221f5a5c27cdfdee76-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"782a3c18cc992aa0","version":"2022.11.3","r":1,"token":"9c895591d5944ca5875f7cd2868874d8","si":100}' crossorigin="anonymous"></script>
+<p>This site is licensed under theBSD 3-Clause "New" or "Revised" License modified from <a href="https://github.com/Legacy-Fabric/legacyfabric.net">here</a></p>
+<p>*Unofficial. We are not affiliated with MTR developer team</p>
+</body>
+</html>
